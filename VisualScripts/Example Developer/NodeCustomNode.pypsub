@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Element>
+    <LanguageFile>.\Fixture</LanguageFile>
+    <Script>
+        <Name>.\NodeCustomFixturePlacement.py</Name>
+        <Uuid>b036822f-5657-4f67-8dfa-79be8e6ac644</Uuid>
+        <Title>Create a fixture</Title>
+        <TextId>1041</TextId>
+        <Version>1.0</Version>
+    </Script>
+    <Page>
+        <Name>FixturePlacement</Name>
+        <Parameter>
+            <Name>FixtureExpander</Name>
+            <Text>Create a fixture</Text>
+            <TextId>1041</TextId>
+            <Value>False</Value>
+            <ValueType>Expander</ValueType>
+            <Parameter>
+                <Name>PlanText</Name>
+                <Text>Plan text</Text>
+                <TextId>1048</TextId>
+                <Value></Value>
+                <ValueType>String</ValueType>
+            </Parameter>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__IN_MANDATORY__</Name>
+        <Parameter>
+            <Name>Fixture</Name>
+            <Text>Fixture</Text>
+            <TextId>1042</TextId>
+            <Value></Value>
+            <ValueType>list{$Fixture}</ValueType>
+        </Parameter>
+        <Parameter>
+            <Name>Attributes</Name>
+            <Text>Attributes</Text>
+            <TextId>1047</TextId>
+            <Value></Value>
+            <ValueType>list{$ElementAttribute}</ValueType>
+        </Parameter>
+    </Page>
+    <Page>
+        <Name>__OUT__</Name>
+        <Parameter>
+            <Name>FixturePlacement</Name>
+            <Text>Fixture placement</Text>
+            <TextId>1043</TextId>
+            <Value></Value>
+            <ValueType>list{$FixturePlacement}</ValueType>
+        </Parameter>
+    </Page>
+     <Page>
+        <Name>__HiddenPage__</Name>
+        <Parameter>
+            <Name>CreateModelObjects</Name>
+            <Value>False</Value>
+            <ValueType>CheckBox</ValueType>
+        </Parameter>
+        <Parameter>
+            <Name>CreateModelPreviewObjects</Name>
+            <Value>False</Value>
+            <ValueType>CheckBox</ValueType>
+        </Parameter>
+        <Parameter>
+            <Name>Executed</Name>
+            <Value>False</Value>
+            <ValueType>CheckBox</ValueType>
+        </Parameter>
+    </Page>
+</Element>

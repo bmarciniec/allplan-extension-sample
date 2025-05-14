@@ -1,0 +1,25 @@
+plugin:
+  name: Sample plugin
+  UUID: 00000000-0000-0000-0000-000000000000 # replace with your plugin UUID
+  version: 0.0.0
+  developer: example-developer    # slugified developer name
+  default-language: en
+  min-allplan-version: 2026
+
+installation:
+  target-location: STD
+
+tools:
+  - id: tool-1
+    pyp: Library\Example Developer\Tool1.pyp
+    display-name:
+      en: First tool
+    icons:
+      small: PythonPartsActionbar\example_developer\Tool1_24.png
+      large: PythonPartsActionbar\example_developer\Tool1_128.png
+
+task-area:
+  display-name:
+    en: Sample plugin
+  layout:
+    - tool-1
